@@ -1,6 +1,8 @@
 <div class="container">
   <%= simple_form_for(@cocktail) do |c| %>
     <%= c.input :name %>
+    <%= c.input :description %>
+    <%= c.input :photo, as: :file %>
     <%= c.submit %>
   <% end %>
 </div>

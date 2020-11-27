@@ -7,11 +7,11 @@
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do%>
         <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card" style="width: 18rem; color: black">
+              <%= cl_image_tag cocktail.photo.key, height: 200 %>
               <div class="card-body">
                 <h5 class="card-title"><%= cocktail.name %></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><%= cocktail.description %></p>
               </div>
             </div>
         </div>
