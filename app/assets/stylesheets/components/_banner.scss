@@ -1,0 +1,29 @@
+.home-banner {
+  background-image: asset-url('cocktails.jpg');
+  background-size: cover;
+  height: 93vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.cocktail-banner{
+  background-image: asset-url('cocktails.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  line-height: 30vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+  position: relative;
+
+  h1{
+    position: absolute;
+    bottom: 125px;
+  }
+}
