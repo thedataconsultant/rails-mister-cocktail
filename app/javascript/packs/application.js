@@ -17,6 +17,7 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
+import 'select2/dist/css/select2.css'
 import { initSelect2 } from '../plugins/select2tagger.js'
 
 document.addEventListener('turbolinks:load', () => {
